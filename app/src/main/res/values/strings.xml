@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Conversión de temperaturas</string>
+    <string name="jose_campuzano">Autor: Jose Campuzano</string>
+    <string name="ingrese_el_valor_de_la_temperatura">Ingrese el valor de la temperatura</string>
+    <string name="_0_0">0.0</string>
+    <string name="c_2_f">C 2 F</string>
+    <string name="ver_conversion">Ver conversion</string>
+    <string name="Limpiar">Limpiar pantalla</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+
+        android:text="@string/jose_campuzano">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/purple_700"
+        android:hint="@string/ingrese_el_valor_de_la_temperatura"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showAns"
+        android:layout_width="179dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/_0_0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/c2f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor"
+        app:layout_constraintVertical_bias="0.619"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/c2f"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/c_2_f"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <RadioButton
+            android:id="@+id/f2c"
+            android:layout_width="179dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/c_2_f"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/c2f" />
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_conversion"
+        android:textSize="15sp"
+        android:background="@color/purple_700"
+        android:id="@+id/ansBtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_error"
+        android:text="@string/Limpiar"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/repetirBtn"/>
+
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>
